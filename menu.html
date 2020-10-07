@@ -4,6 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translate(0, 100%);
+        }
+        
+        ul li ul li {
+            display: block;
+            margin-left: 0;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        ul li {
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            background-color: green;
+            color: white;
+            position: relative;
+        }
+        ul li  a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
