@@ -11,20 +11,22 @@
         }
 
         ul li ul {
-            display: none;
             position: absolute;
             left: 0;
             bottom: 0;
             transform: translate(0, 100%);
+            max-height: 0;
+            transition: 1s;
+            overflow: hidden;
         }
         
         ul li ul li {
-            display: block;
             margin-left: 0;
         }
 
         ul li:hover ul {
             display: block;
+            max-height: 500px;
         }
 
         ul li {
