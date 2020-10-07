@@ -15,13 +15,24 @@
             width: 100%;
             height: 100%;
             text-align: center;
-            background-color: blue;
+            background-color: lightblue;
             position: absolute;
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .card .side.b { 
+            background-color: green;
+        }
+        .card .side.b { 
+            transform: rotateY(-180deg);
+        }
+        .card:hover .side.a { 
+            transform: rotateY(180deg);
+        }
+        .card:hover .side.b { 
+            transform: rotateY(0deg);
         }
 
-        .card .side.a { 
-            z-index: 1;
-        }
 
     </style>
 </head>
